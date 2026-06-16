@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+#display{
+    border: 3px solid 00ff00;
+    width: 70%;
+    height: 300px;
+    margin: 3em auto;
+    border-style: dashed;
+}
