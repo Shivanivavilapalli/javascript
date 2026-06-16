@@ -1,3 +1,8 @@
+// == checks only value
+// === strictly values and  datatypes
+// !== not operator
+// var datatype takes int boolean double float string  
+
 // var a = 10;
 // var b = "10";
 // var c = "errrr";
@@ -61,7 +66,5 @@ const change = () =>{
 
     let index = Math.floor(Math.random() * colors.length);
 
-    document.body.style.backgroundColor = colors[index];
+    document.getElementById('display').style.backgroundColor = colors[index];
 }
-// use 
-// Math.random() Math.floor() arrY
