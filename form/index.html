@@ -8,13 +8,17 @@
 </head>
 <body>
     
-    <h1>LOGIN</h1>
-    <form>
-        <input id="pa" name="name" placeholder="name"><br></br>
-        <input id="pa" name="id" placeholder="id"><br></br>
-       <input id="pa" name="phonenum" placeholder="phonenum"><br></br>
+   
+    <form onsubmit="validate(event)">
+         <h1>LOGIN</h1>
+        <input id="pa" name="name" placeholder="Enter Name"><br></br>
+        
+        <input id="pa" name="id" placeholder=" Enter Id"><br></br>
+        
+       <input id="pa" name="phonenum" placeholder="Enter Phonenum"><br></br>
+        <p id="error"></p>
         <button id = "btn">submit</button>
     </form>
-
+<script src="script.js"></script>
 </body>
 </html>
