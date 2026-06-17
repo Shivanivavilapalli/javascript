@@ -9,7 +9,7 @@
 // var d = false;
 // console.log(a + b + c + d);
 // if (a == b) {
-//     console.log("equal because of value");
+//     console.log("equal because of val ue");
 // }
 // else {
 //     console.log("not values equal");
@@ -59,12 +59,24 @@
 //     di.style.backgroundColor ='pink';
 //     di.style.color = 'white';
 // }
-const change = () =>{
-    // let di = document.getElementById("display");
-    // di.style.backgroundColor = "red"
-    const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
+// const change = () =>{
+//     // let di = document.getElementById("display");
+//     // di.style.backgroundColor = "red"
+//     const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
 
-    let index = Math.floor(Math.random() * colors.length);
+//     let index = Math.floor(Math.random() * colors.length);
 
-    document.getElementById('display').style.backgroundColor = colors[index];
+//     document.getElementById('display').style.backgroundColor = colors[index];
+// }
+let colorcodes = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f']
+const changecolor = () =>{
+    let display = document.getElementById("display");
+    let randcolor = "#";
+    let color = document.getElementById("color");
+    for(let index = 0;index<6;index++ ){
+        let randNo = Math.floor(Math.random()*16);
+        randcolor += colorcodes[randNo];
+    }
+    color.innerHTML = randcolor
+    display.style.backgroundColor = randcolor
 }
